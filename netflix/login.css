@@ -1,0 +1,191 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+    margin: 0;
+    height: 2000px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  body.bg-changed{
+    background-color: #111;
+    background-image: none;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: #111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;        
+    z-index: 100;
+  }
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .logo img {
+    height: 40px;       
+  }
+  .signin-btn {
+    background: #ff6666; 
+    padding: 6px 18px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .lang-box {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  .hero {
+    height: 100vh;
+    background: url('IN-en-20251201-TRIFECTA-perspective_c7623e8e-c406-43d2-9d9a-0140ce19ac84_large.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 70px; 
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    max-width: 700px;
+    color: white;
+  }
+
+  .hero h3 {
+    font-weight: normal;
+    margin-top: 10px;
+  }
+
+  .email-box {
+    margin-top: 20px;
+  }
+
+  .email-box input {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+  }
+
+  .email-box button {
+    padding: 12px 20px;
+    background: #e50914;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  .lang-box option {
+    background: #111;
+    color: white;
+  }
+  .trending{
+    align-content: center;
+  }
+  .image{
+    display: flex;
+    grid-template-columns: repeat(6, 1fr);
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    gap: 10px;
+  }
+  .image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .img:hover{
+    transform: scale(1.05);
+  }
+  .box-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: black;
+  }
+  .box{
+    background-color: #1a0b2a;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  .box:hover{
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  .faq {
+  width: 70%;
+  margin: 50px auto;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.faq h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.faq details {
+  background-color: #303030;
+  margin: 10px 0;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.faq summary {
+  font-size: 22px;
+  outline: none;
+}
+.faq details[open] {
+  background-color: #3c3c3c;
+}
+.faq p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.faq summary::-webkit-details-marker {
+  display: none; 
+}
+.faq summary::after {
+  content: "+";
+  float: right;
+  font-size: 30px;
+}
+.faq details[open] summary::after {
+  content: "×";
+}
